@@ -1,11 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using Npgsql;
-using repository;
+using PostgresPlayground;
 
 Console.WriteLine("Hello, Postgres!");
 
-const string cs = "Host=localhost:5434;Username=postgres;Password=postgres";
+const string cs = "Host=localhost:5433;Username=root;Password=password;Database=postgres";
 
 using var con = new NpgsqlConnection(cs);
 con.Open();
